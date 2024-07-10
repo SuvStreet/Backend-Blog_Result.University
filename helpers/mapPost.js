@@ -13,6 +13,6 @@ module.exports = function (post) {
     comments: post.comments.map((comment) =>
       mongoose.isObjectIdOrHexString(comment) ? comment : mapComment(comment)
     ),
-    publishedAt: post.createdAt.toLocaleString(),
+    publishedAt: post.createdAt.toLocaleString('ru-RU'),
   }
 }

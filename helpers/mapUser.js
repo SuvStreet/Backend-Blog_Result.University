@@ -3,6 +3,6 @@ module.exports = function (user) {
     id: user._id,
     login: user.login,
     roleId: user.role,
-    registeredAt: user.createdAt.toLocaleString(),
+    registeredAt: user.createdAt.toLocaleString('ru-RU'),
   }
 }
